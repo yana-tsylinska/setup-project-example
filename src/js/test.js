@@ -2,7 +2,7 @@
   const postRequestPromise = new Promise((resolve, reject) => {
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = () => {
-      if (this.readyState === 4 && this.status === 200) {
+      if (this.readyState === 4) {
         if (this.status === 200) {
           resolve(this.responseText);
         } else {
